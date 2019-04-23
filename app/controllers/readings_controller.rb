@@ -22,7 +22,7 @@ class ReadingsController < ApplicationController
   # See end of this file for an example request
   def create
     Reading.create! reading_params
-    head :ok
+    head :created
   rescue ActiveRecord::RecordInvalid
     head :bad_request
   end

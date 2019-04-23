@@ -31,7 +31,7 @@ RSpec.describe "Readings", type: :request do
     context "when properly authenticated" do
       it "is successfull" do
         make_request
-        expect(response).to have_http_status(200)
+        expect(response).to have_http_status(201)
       end
 
       it "creates a new record" do
